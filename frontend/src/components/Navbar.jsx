@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 import {FaBitcoin, FaYoutube, FaSquareGithub} from "react-icons/fa6"
 import {BsInstagram} from "react-icons/bs"
+import {GiHamburgerMenu} from "react-icons/gi"
 
 const Navbar = () => {
     const[show, setShow] = useState(false);
@@ -28,6 +29,8 @@ const Navbar = () => {
             <li><Link to={"/"}><BsInstagram/></Link></li>
         </ul>
     </div>
+    <GiHamburgerMenu className='hamburger' onClick={() => setShow(!show)}/> 
+
   </nav>
   </>;
   
